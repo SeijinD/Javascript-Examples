@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_4</title>
+    <script type="application/javascript">
+        function addNumber() {
+            var input = parseFloat(document.getElementById('input').value);
+            var output = parseFloat(document.getElementById('output').value);
+
+            output += input;
+            document.getElementById('output').value = output;
+
+            if(document.getElementById('output').value > 1000)
+                window.alert(">1000");
+        }
+    </script>
+</head>
+<body>
+    <input id="input" type="text" value="0">
+    <input type="button" value="+" onclick="addNumber()">
+    <input id="output" type="text" value="0">
+</body>
+</html>

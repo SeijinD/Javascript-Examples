@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_9</title>
+    <script type="application/javascript">
+        function showMe() {
+            if(document.getElementById('input').value == "domain")
+                window.alert(location.hostname);
+            else
+                window.alert(location.pathname);
+        }
+    </script>
+</head>
+<body>
+    <select id="input">
+        <option>domain</option>
+        <option>path</option>
+    </select>
+    <input value="Show" type="button" onclick="showMe()">
+</body>
+</html>

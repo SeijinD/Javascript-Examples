@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_6</title>
+    <script type="text/javascript">
+        var myWindow;
+
+        function openURL() {
+            var address = document.getElementById('address').value;
+            var myWindow = window.open(address, "_blank", "height=200, width=200")
+        }
+
+        function resizeWindow() {
+            var height = document.getElementById('sizeHeight').value;
+            var weidth = document.getElementById('sizeWidth').value;
+            myWindow = window.resizeTo('','',width="width",height="height");
+            myWindow.focus();
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <input type="text" id="sizeWidth" placeholder="Width">
+        <input type="text" id="sizeHeight" placeholder="Height">
+        <input type="text" id="address" placeholder="Address">
+        <br/><br/>
+        <input type="button" onclick="openURL()" value="Open Window">
+        <input type="button" onclick="resizeWindow()" value="Resize Window">
+    </form>
+</body>
+</html>
