@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_25</title>
+    <script type="application/javascript">
+        function addItem() {
+            if(document.getElementById('input').value != "")
+            {
+                var option = document.createElement("option")
+                option.innerHTML = document.getElementById('input').value;
+                document.getElementById('output').appendChild(option);
+                document.getElementById('input').value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" placeholder="Type..." id="input">
+    <input type="button" value="Add" onclick="addItem()">
+    <select id="output">
+
+    </select>
+</body>
+</html>

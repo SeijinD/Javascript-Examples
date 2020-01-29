@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_22</title>
+    <script type="application/javascript">
+        var picAndSize = [
+            ["9_1.png", "300", "300"],
+            ["9_2.jpg", "400", "400"],
+            ["9_3.jpg", "500", "500"],
+            ["9_4.jpg", "600", "600"]
+        ];
+
+        var counter = 0;
+
+        function change(obj) {
+            (obj.value == "Next")?counter++:counter--;
+
+            if(counter == picAndSize.length){
+                counter = 0;
+            }
+            if(counter == -1){
+                counter = picAndSize.length-1;
+            }
+            document.getElementsByTagName('img')[0].src = picAndSize[counter][0];
+            document.getElementsByTagName('img')[0].width = picAndSize[counter][1];
+            document.getElementsByTagName('img')[0].height = picAndSize[counter][2];
+        }
+    </script>
+</head>
+<body>
+    <img src="9_1.png" height="200" width="200">
+    <br>
+    <input type="button" value="Next" onclick="change(this)">
+    <input type="button" value="Previus" onclick="change(this)">
+</body>
+</html>

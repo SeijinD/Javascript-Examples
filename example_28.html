@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_28</title>
+    <script type="application/javascript">
+        var pics = ["9_1.png", "9_2.jpg", "9_3.jpg", "9_4.jpg"];
+        var counter = 0;
+        var loop;
+
+        function change(obj) {
+            (obj.value == "Start")?loop = setInterval(function () {
+                counter++;
+                if(counter == pics.length)
+                    counter = 0;
+                document.getElementsByTagName('img')[0].src = pics[counter];
+            }, 1000):clearInterval(loop);
+        }
+    </script>
+</head>
+<body>
+    <img src="9_1.png" height="300px" width="300px">
+    <br/>
+    <input type="button" value="Start" onclick="change(this)">
+    <input type="button" value="Stop" onclick="change(this)">
+</body>
+</html>

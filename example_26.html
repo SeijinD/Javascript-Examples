@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_26</title>
+    <script type="application/javascript">
+        function goGo() {
+            for (i = 0;i <= document.getElementsByTagName('table')[0].rows.length-1;i++)
+                for (j = 0;j <= document.getElementsByTagName('table')[0].rows[i].cells.length-1;j++){
+                    document.getElementsByTagName('table')[0].rows[i].cells[j].innerHTML = Math.floor(Math.random()*10+1);
+                    document.getElementsByTagName('table')[0].rows[i].cells[j].style.backgroundColor = (document.getElementsByTagName('table')[0].rows[i].cells[j].innerHTML < 5)?"red":"green";
+                }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Fill" onclick="goGo()">
+    <table border="3px solid black" height="500px" width="500px">
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </table>
+</body>
+</html>

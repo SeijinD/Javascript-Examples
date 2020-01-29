@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_21</title>
+    <script type="application/javascript">
+        var pics = ["9_1.png", "9_2.jpg", "9_3.jpg", "9_4.jpg"];
+        var counter = 0;
+
+        function next() {
+            counter++;
+            if(counter==pics.length){
+                counter = 0;
+            }
+            document.getElementsByTagName('img')[0].src = pics[counter];
+        }
+        
+        function previus() {
+            counter--;
+            if(counter == -1){
+                counter = pics.length-1;
+            }
+            document.getElementsByTagName('img')[0].src = pics[counter];
+        }
+    </script>
+</head>
+<body>
+    <img src="9_1.png" height="200" width="200">
+    <br>
+    <input type="button" value="Next" onclick="next()">
+    <input type="button" value="Previus" onclick="previus()">
+</body>
+</html>

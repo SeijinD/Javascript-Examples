@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_30</title>
+    <script type="text/javascript">
+        function startUp(){
+            for (i = 0;i <= document.getElementsByTagName('p').length-1;i++){
+                var option = document.createElement("option");
+                option.innerHTML = document.getElementsByTagName('p')[i].innerHTML;
+                document.getElementsByTagName('select')[0].appendChild(option);
+            }
+        }
+
+        function goTo(obj){
+            document.getElementsByTagName('p')[obj.selectedIndex].scrollIntoView(true);
+            document.getElementsByTagName('p')[obj.selectedIndex].style.fontWeight="bold";
+        }
+    </script>
+</head>
+<body onload="startUp()">
+    <select onchange="goTo(this)"></select>
+
+    <p>I am a paragraph 1</p>
+    <br/><br/>
+    <p>I am a paragraph 2</p>
+    <br/><br/>
+    <p>I am a paragraph 3</p>
+    <br/><br/>
+    <p>I am a paragraph 4</p>
+    <br/><br/>
+    <p>I am a paragraph 5</p>
+    <br/><br/>
+    <p>I am a paragraph 6</p>
+    <br/><br/>
+    <p>I am a paragraph 7</p>
+    <br/><br/>
+    <p>I am a paragraph 8</p>
+    <br/><br/>
+    <p>I am a paragraph 9</p>
+    <br/><br/>
+    <p>I am a paragraph 10</p>
+    <br/><br/>
+    <p>I am a paragraph 11</p>
+    <br/><br/>
+    <p>I am a paragraph 12</p>
+    <br/><br/>
+    <p>I am a paragraph 13</p>
+    <br/><br/>
+    <p>I am a paragraph 14</p>
+    <br/><br/>
+    <p>I am a paragraph 15</p>
+    <br/><br/>
+    <p>I am a paragraph 16</p>
+    <br/><br/>
+    <p>I am a paragraph 17</p>
+    <br/><br/>
+    <p>I am a paragraph 18</p>
+    <br/><br/>
+    <p>I am a paragraph 19</p>
+    <br/><br/>
+    <p>I am a paragraph 20</p>
+    <br/><br/>
+    <p>I am a paragraph 21</p>
+    <br/><br/>
+    <p>I am a paragraph 22</p>
+    <br/><br/>
+    <p>I am a paragraph 23</p>
+    <br/><br/>
+    <p>I am a paragraph 24</p>
+    <br/><br/>
+    <p>I am a paragraph 25</p>
+    <br/><br/>
+    <p>I am a paragraph 26</p>
+    <br/><br/>
+    <p>I am a paragraph 27</p>
+    <br/><br/>
+    <p>I am a paragraph 28</p>
+    <br/><br/>
+    <p>I am a paragraph 29</p>
+    <br/><br/>
+    <p>I am a paragraph 30</p>
+    <br/><br/>
+    <p>I am a paragraph 31</p>
+    <br/><br/>
+    <p>I am a paragraph 32</p>
+    <br/><br/>
+    <p>I am a paragraph 33</p>
+</body>
+</html>

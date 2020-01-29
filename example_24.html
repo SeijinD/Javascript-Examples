@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_24</title>
+    <script type="application/javascript">
+        function goGo(obj) {
+            if (obj.value == "Show"){
+                obj.value = "Hide";
+                document.getElementsByTagName('div')[0].appendChild(document.createElement("ol"));
+                for (i = 0;i <= document.images.length-1;i++){
+                    document.getElementsByTagName('ol')[0].appendChild(document.createElement("li"));
+                    document.getElementsByTagName('li')[i].innerHTML = document.getElementsByTagName('img')[i].src;
+                }
+            }
+            else{
+                obj.value = "Show";
+                document.getElementsByTagName('div')[0].removeChild(document.getElementsByTagName('ol')[0]);
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button"  value="Show" onclick="goGo(this)">
+    <br/>
+    <div></div>
+    <br/>
+    <img src="9_1.png" height="200" width="200">
+    <img src="9_2.jpg" height="200" width="200">
+    <img src="9_3.jpg" height="200" width="200">
+    <img src="9_4.jpg" height="200" width="200">
+</body>
+</html>
