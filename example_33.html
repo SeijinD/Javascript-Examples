@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_33</title>
+    <script type="application/javascript">
+        function create() {
+            for (i = 0;i <= document.getElementsByTagName('input')[0].value-1;i++){
+                document.getElementsByTagName('table')[0].insertRow(0);
+                for (j = 0;j <= document.getElementsByTagName('input')[1].value-1;j++)
+                    document.getElementsByTagName('table')[0].rows[0].insertCell(0);
+            }
+        }
+
+        function deleteCell() {
+            for (i = 0;i <= document.getElementsByTagName('table')[0].rows.length-1;i++)
+                document.getElementsByTagName('table')[0].rows[i].deleteCell(-1);
+        }
+
+    </script>
+</head>
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="button" value="Create Table" onclick="create()">
+    <input type="button" value="Delete Row" style="background-color:red;" onclick="document.getElementsByTagName('table')[0].deleteRow(-1);">
+    <input type="button" value="Delete Cell" style="background-color:red;" onclick="deleteCell()">
+    <h1>I like trains!!!</h1>
+    <br/>
+    <table border="3px solid black"></table>
+</body>
+</html>

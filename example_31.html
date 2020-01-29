@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_31</title>
+    <script type="text/javascript">
+        function startUp() {
+            for (var i = 0; i < document.getElementsByTagName('a').length; i++)
+                document.getElementsByTagName('a')[i].onclick = function(){return window.confirm("Do you want to leave?")};
+        }
+
+        function clickIt() {
+            return false;
+        }
+    </script>
+</head>
+<body onload="startUp()">
+    <a href="https://www.duckduckgo.com">Duck</a>
+    <br/>
+    <a href="https://www.duckduckgo.com">Duck It!</a>
+</body>
+</html>
