@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_20</title>
+    <script type="text/javascript">
+        function creator() {
+            var obj = document.createElement(document.getElementsByTagName('select').value);
+            obj.innerHTML = document.getElementsByTagName('input')[0].value;
+            attr = document.createAttribute("style");
+            attr.value = "color: " + document.getElementsByTagName('select')[1].value;
+            obj.setAttributeNode(attr);
+            document.getElementsByTagName('div')[0].appendChild(obj);
+        }
+    </script>
+</head>
+<body>
+    <input type="text">
+    <select>
+        <option>h1</option>
+        <option>h2</option>
+        <option>h3</option>
+        <option>h4</option>
+        <option>h5</option>
+        <option>p</option>
+        <option>span</option>
+    </select>
+    <select>
+        <option>red</option>
+        <option>green</option>
+        <option>blue</option>
+        <option>yellow</option>
+        <option>purple</option>
+    </select>
+    <input type="button" value="Add" onclick="creator()">
+    <div></div>
+</body>
+</html>

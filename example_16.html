@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_16</title>
+    <script type="application/javascript">
+        function whereAmI(obj) {
+            document.getElementsByTagName('input')[0].value = obj.target.tagName;
+            document.getElementsByTagName('textarea')[0].innerHTML = obj.target.innerHTML;
+        }
+    </script>
+</head>
+<body onmouseover="whereAmI(event)">
+    <input type="text" id="input">
+    <textarea></textarea>
+
+    <h1>I am a heading1</h1>
+    <p>I am a paragraph</p>
+    <li>I am a li</li>
+    <a href="">I am a link</a>
+    <div>I am a div</div>
+</body>
+</html>

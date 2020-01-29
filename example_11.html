@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_11</title>
+    <script type="application/javascript">
+        function giveString(obj) {
+            document.getElementById('output').value = obj.value.toUpperCase();
+        }
+
+        function giveString2(obj) {
+            document.getElementById('output2').value = obj.value.toLowerCase();
+        }
+    </script>
+</head>
+<body>
+    <input type="text" onkeyup="giveString(this)">
+    <input type="text" id="output">
+
+    <br>
+    <br>
+
+    <input type="text" onkeyup="giveString2(this)">
+    <input type="text" id="output2">
+
+</body>
+</html>

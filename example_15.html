@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_15</title>
+    <script type="text/javascript">
+        function actionFocus(obj) {
+            obj.style.backgroundColor = "yellow";
+        }
+
+        function actionBlur(obj) {
+            if (obj.value == "")
+                obj.style.backgroundColor = "red";
+            else
+                obj.style.backgroundColor = "white";
+        }
+
+    </script>
+</head>
+<body>
+<input type="text" id="1" onfocus="actionFocus(this)" onblur="actionBlur(this)">
+<input type="text" id="2" onfocus="actionFocus(this)" onblur="actionBlur(this)">
+<input type="text" id="3" onfocus="actionFocus(this)" onblur="actionBlur(this)">
+<input type="text" id="4" onfocus="actionFocus(this)" onblur="actionBlur(this)">
+</body>
+</html>

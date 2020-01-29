@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_17</title>
+    <script type="application/javascript">
+        function actionClick(obj) {
+            if (obj.target.tagName == "LI")
+                obj.target.innerHTML = "Με επέλεξες!!!";
+        }
+    </script>
+</head>
+<body>
+    <ul onclick="actionClick(event)">
+        <li>I am 1</li>
+        <li>I am 2</li>
+        <li>I am 3</li>
+        <li>I am 4</li>
+        <li>I am 5</li>
+        <li>I am 6</li>
+    </ul>
+</body>
+</html>

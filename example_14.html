@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_14</title>
+    <script type="text/javascript">
+        function actionFocus1() {
+            var obj = document.getElementById('1')
+            obj.style.backgroundColor = "yellow";
+        }
+
+        function actionBlur1() {
+            var obj = document.getElementById('1')
+            if (obj.value == "")
+                obj.style.backgroundColor = "red";
+            else
+                obj.style.backgroundColor = "white";
+        }
+
+        function actionFocus2() {
+            var obj = document.getElementById('2')
+            obj.style.backgroundColor = "yellow";
+        }
+
+        function actionBlur2() {
+            var obj = document.getElementById('2')
+            if (obj.value == "")
+                obj.style.backgroundColor = "red";
+            else
+                obj.style.backgroundColor = "white";
+        }
+
+        function actionFocus3() {
+            var obj = document.getElementById('3')
+            obj.style.backgroundColor = "yellow";
+        }
+
+        function actionBlur3() {
+            var obj = document.getElementById('3')
+            if (obj.value == "")
+                obj.style.backgroundColor = "red";
+            else
+                obj.style.backgroundColor = "white";
+        }
+
+        function actionFocus4() {
+            var obj = document.getElementById('4')
+            obj.style.backgroundColor = "yellow";
+        }
+
+        function actionBlur4() {
+            var obj = document.getElementById('4')
+            if (obj.value == "")
+                obj.style.backgroundColor = "red";
+            else
+                obj.style.backgroundColor = "white";
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="1" onfocus="actionFocus1()" onblur="actionBlur1()">
+    <input type="text" id="2" onfocus="actionFocus2()" onblur="actionBlur2()">
+    <input type="text" id="3" onfocus="actionFocus3()" onblur="actionBlur3()">
+    <input type="text" id="4" onfocus="actionFocus4()" onblur="actionBlur4()">
+</body>
+</html>

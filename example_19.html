@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Example_19</title>
+    <script type="application/javascript">
+        function actionClick() {
+            for(i = 0; i <= document.getElementsByTagName('a').length-1; i++)
+                document.getElementsByTagName('a')[i].setAttribute("class","linkClass");
+        }
+    </script>
+    <style type="text/css">
+        .linkClass{
+            color: red;
+            border: 1px solid yellow;
+        }
+    </style>
+</head>
+<body>
+    <a href="">I am a link</a>
+    <br/>
+    <a href="">I am a link</a>
+    <br/>
+    <a href="">I am a link</a>
+    <br/>
+    <a href="">I am a link</a>
+    <br/>
+    <a href="">I am a link</a>
+    <br/>
+    <a href="">I am a link</a>
+    <br/>
+    <a href="">I am a link</a>
+    <br/>
+    <a href="">I am a link</a>
+    <br/>
+    <a href="">I am a link</a>
+    <br/>
+    <a href="">I am a link</a>
+    <br/>
+    <input type="button" value="ClickMe" onclick="actionClick()">
+</body>
+</html>
